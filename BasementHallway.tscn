@@ -22,7 +22,7 @@ extents = Vector2( 24.5386, 15.8178 )
 custom_solver_bias = 0.0
 extents = Vector2( 29.8608, 29.4838 )
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -47,7 +47,7 @@ _sections_unfolded = [ "Cell" ]
 
 [node name="Candle" type="Sprite" parent="." index="1"]
 
-position = Vector2( 30, 494 )
+position = Vector2( 30, 473 )
 texture = ExtResource( 2 )
 centered = false
 region_enabled = true
@@ -56,7 +56,7 @@ _sections_unfolded = [ "Offset", "Region" ]
 
 [node name="Candle2" type="Sprite" parent="." index="2"]
 
-position = Vector2( 187, 494 )
+position = Vector2( 187, 473 )
 texture = ExtResource( 2 )
 centered = false
 region_enabled = true
@@ -65,7 +65,7 @@ _sections_unfolded = [ "Offset", "Region" ]
 
 [node name="Candle3" type="Sprite" parent="." index="3"]
 
-position = Vector2( 344, 495 )
+position = Vector2( 344, 474 )
 texture = ExtResource( 2 )
 centered = false
 region_enabled = true

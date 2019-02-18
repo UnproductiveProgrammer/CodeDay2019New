@@ -5,10 +5,10 @@
 [ext_resource path="res://KitchenCabinetTop.png" type="Texture" id=3]
 [ext_resource path="res://WallSconce.png" type="Texture" id=4]
 [ext_resource path="res://KitchenCabinetTopBroken.png" type="Texture" id=5]
-[ext_resource path="res://KitchenCabinetEnd.png" type="Texture" id=6]
-[ext_resource path="res://KitchenCabinetMid.png" type="Texture" id=7]
-[ext_resource path="res://Lighter.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Lighting and Effects Files/light0.png" type="Texture" id=9]
+[ext_resource path="res://KitchenCabinetMid.png" type="Texture" id=6]
+[ext_resource path="res://OverheadLampOff_OBJ.png" type="Texture" id=7]
+[ext_resource path="res://Lighting and Effects Files/light0.png" type="Texture" id=8]
+[ext_resource path="res://Lighter.tscn" type="PackedScene" id=9]
 [ext_resource path="res://BGBasementStone.png" type="Texture" id=10]
 [ext_resource path="res://BGKitchenWallpaper.png" type="Texture" id=11]
 
@@ -29,11 +29,10 @@ extents = Vector2( 27.2654, 16.0758 )
 
 [node name="Node2D" type="Node2D"]
 
-position = Vector2( 0, 30 )
+position = Vector2( 3, 30 )
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
-editor/display_folded = true
 position = Vector2( 0, -1 )
 mode = 0
 tile_set = ExtResource( 1 )
@@ -56,7 +55,7 @@ _sections_unfolded = [ "Cell" ]
 
 [node name="Door" type="Sprite" parent="TileMap" index="0"]
 
-position = Vector2( 98, 441 )
+position = Vector2( 288, 441 )
 texture = ExtResource( 2 )
 centered = false
 region_enabled = true
@@ -65,7 +64,7 @@ _sections_unfolded = [ "Offset", "Region" ]
 
 [node name="Cabinet" type="Sprite" parent="TileMap" index="1"]
 
-position = Vector2( 212, 421 )
+position = Vector2( -2, 421 )
 texture = ExtResource( 3 )
 centered = false
 region_enabled = true
@@ -74,172 +73,140 @@ _sections_unfolded = [ "Region" ]
 
 [node name="Cabinet2" type="Sprite" parent="TileMap" index="2"]
 
-position = Vector2( 244, 421 )
+position = Vector2( 30, 421 )
 texture = ExtResource( 3 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 32, 64 )
 _sections_unfolded = [ "Region" ]
 
-[node name="Cabinet3" type="Sprite" parent="TileMap" index="3"]
+[node name="Light" type="Sprite" parent="TileMap" index="3"]
 
-position = Vector2( 340, 421 )
-texture = ExtResource( 3 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 32, 64 )
-_sections_unfolded = [ "Region" ]
-
-[node name="Light" type="Sprite" parent="TileMap" index="4"]
-
-position = Vector2( 170, 441 )
+position = Vector2( 360, 437 )
 texture = ExtResource( 4 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 32, 32 )
 _sections_unfolded = [ "Region" ]
 
-[node name="Light2" type="Sprite" parent="TileMap" index="5"]
+[node name="Light2" type="Sprite" parent="TileMap" index="4"]
 
-position = Vector2( 60, 441 )
+position = Vector2( 248, 437 )
 texture = ExtResource( 4 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 32, 32 )
 _sections_unfolded = [ "Region" ]
 
-[node name="CabinetBroken" type="Sprite" parent="TileMap" index="6"]
+[node name="CabinetBroken" type="Sprite" parent="TileMap" index="5"]
 
-position = Vector2( 276, 421 )
+position = Vector2( 62, 421 )
 texture = ExtResource( 5 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 32, 64 )
 _sections_unfolded = [ "Region" ]
 
-[node name="CabinetBroken3" type="Sprite" parent="TileMap" index="7"]
+[node name="Counter" type="Sprite" parent="TileMap" index="6"]
 
-position = Vector2( 372, 421 )
-texture = ExtResource( 5 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 32, 64 )
-_sections_unfolded = [ "Region" ]
-
-[node name="CabinetBroken4" type="Sprite" parent="TileMap" index="8"]
-
-position = Vector2( 404, 421 )
-texture = ExtResource( 5 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 32, 64 )
-_sections_unfolded = [ "Region" ]
-
-[node name="CabinetBroken2" type="Sprite" parent="TileMap" index="9"]
-
-position = Vector2( 308, 421 )
-texture = ExtResource( 5 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 32, 64 )
-_sections_unfolded = [ "Region" ]
-
-[node name="CounterEnd" type="Sprite" parent="TileMap" index="10"]
-
-position = Vector2( 179, 506 )
+position = Vector2( -1.71524, 503.22 )
 texture = ExtResource( 6 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 32, 64 )
 _sections_unfolded = [ "Region" ]
 
-[node name="Counter" type="Sprite" parent="TileMap" index="11"]
+[node name="Counter2" type="Sprite" parent="TileMap" index="7"]
 
-position = Vector2( 211, 506 )
-texture = ExtResource( 7 )
+position = Vector2( 30.2848, 503.22 )
+texture = ExtResource( 6 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 32, 64 )
 _sections_unfolded = [ "Region" ]
 
-[node name="Counter7" type="Sprite" parent="TileMap" index="12"]
+[node name="Counter6" type="Sprite" parent="TileMap" index="8"]
 
-position = Vector2( 308, 506 )
-texture = ExtResource( 7 )
+position = Vector2( 62.2848, 503.22 )
+texture = ExtResource( 6 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 32, 64 )
 _sections_unfolded = [ "Region" ]
 
-[node name="Counter2" type="Sprite" parent="TileMap" index="13"]
+[node name="OverheadLampOff_OBJ" type="Sprite" parent="." index="1"]
 
-position = Vector2( 243, 506 )
+position = Vector2( 128.544, 431.565 )
 texture = ExtResource( 7 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 32, 64 )
-_sections_unfolded = [ "Region" ]
 
-[node name="Counter6" type="Sprite" parent="TileMap" index="14"]
+[node name="Light2D3" type="Light2D" parent="OverheadLampOff_OBJ" index="0"]
 
-position = Vector2( 340, 506 )
-texture = ExtResource( 7 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 32, 64 )
-_sections_unfolded = [ "Region" ]
+position = Vector2( 252.456, 24.4351 )
+scale = Vector2( 0.195187, 0.195187 )
+enabled = true
+editor_only = false
+texture = ExtResource( 8 )
+offset = Vector2( 0, 0 )
+texture_scale = 1.0
+color = Color( 0.819608, 0.698039, 0.603922, 1 )
+energy = 0.7
+mode = 0
+range_height = 0.0
+range_z_min = -1024
+range_z_max = 1024
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
 
-[node name="Counter3" type="Sprite" parent="TileMap" index="15"]
-
-position = Vector2( 275, 506 )
-texture = ExtResource( 7 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 32, 64 )
-_sections_unfolded = [ "Region" ]
-
-[node name="Counter5" type="Sprite" parent="TileMap" index="16"]
-
-position = Vector2( 372, 506 )
-texture = ExtResource( 7 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 32, 64 )
-_sections_unfolded = [ "Region" ]
-
-[node name="Counter4" type="Sprite" parent="TileMap" index="17"]
-
-position = Vector2( 307, 506 )
-texture = ExtResource( 7 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 32, 64 )
-_sections_unfolded = [ "Region" ]
-
-[node name="Counter8" type="Sprite" parent="TileMap" index="18"]
-
-position = Vector2( 404, 506 )
-texture = ExtResource( 7 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 32, 64 )
-_sections_unfolded = [ "Region" ]
-
-[node name="Lighter" parent="." index="1" instance=ExtResource( 8 )]
+[node name="Lighter" parent="." index="2" instance=ExtResource( 9 )]
 
 position = Vector2( 21.9195, 521.572 )
 
-[node name="Light2D" type="Light2D" parent="." index="2"]
+[node name="Light2D" type="Light2D" parent="." index="3"]
 
-position = Vector2( 70, 460 )
+position = Vector2( 259, 456 )
 scale = Vector2( 0.195187, 0.195187 )
 enabled = true
 editor_only = false
-texture = ExtResource( 9 )
+texture = ExtResource( 8 )
 offset = Vector2( 0, 0 )
 texture_scale = 1.0
-color = Color( 1, 1, 1, 1 )
-energy = 0.85
+color = Color( 0.820313, 0.701226, 0.605621, 1 )
+energy = 0.7
+mode = 0
+range_height = 0.0
+range_z_min = -1024
+range_z_max = 1024
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+_sections_unfolded = [ "Shadow" ]
+
+[node name="Light2D2" type="Light2D" parent="." index="4"]
+
+position = Vector2( 128.372, 435.934 )
+scale = Vector2( 0.195187, 0.195187 )
+enabled = true
+editor_only = false
+texture = ExtResource( 8 )
+offset = Vector2( 0, 0 )
+texture_scale = 1.0
+color = Color( 0.9375, 0.898282, 0.86792, 1 )
+energy = 0.6
 mode = 0
 range_height = 0.0
 range_z_min = -1024
@@ -255,34 +222,9 @@ shadow_filter = 0
 shadow_filter_smooth = 0.0
 shadow_item_cull_mask = 1
 
-[node name="Light2D2" type="Light2D" parent="." index="3"]
+[node name="Floor" type="Sprite" parent="." index="5"]
 
-position = Vector2( 190, 460 )
-scale = Vector2( 0.195187, 0.195187 )
-enabled = true
-editor_only = false
-texture = ExtResource( 9 )
-offset = Vector2( 0, 0 )
-texture_scale = 1.0
-color = Color( 1, 1, 1, 1 )
-energy = 0.85
-mode = 0
-range_height = 0.0
-range_z_min = -1024
-range_z_max = 1024
-range_layer_min = 0
-range_layer_max = 0
-range_item_cull_mask = 1
-shadow_enabled = false
-shadow_color = Color( 0, 0, 0, 0 )
-shadow_buffer_size = 2048
-shadow_gradient_length = 0.0
-shadow_filter = 0
-shadow_filter_smooth = 0.0
-shadow_item_cull_mask = 1
-
-[node name="Floor" type="Sprite" parent="." index="4"]
-
+editor/display_folded = true
 position = Vector2( 223.783, 572.993 )
 scale = Vector2( 13.9955, 0.423122 )
 texture = ExtResource( 10 )
@@ -304,8 +246,9 @@ bounce = 0.0
 
 shape = SubResource( 1 )
 
-[node name="LeftWall" type="Sprite" parent="." index="5"]
+[node name="LeftWall" type="Sprite" parent="." index="6"]
 
+editor/display_folded = true
 position = Vector2( -0.12812, 490.818 )
 scale = Vector2( 0.0813503, 4.71373 )
 texture = ExtResource( 11 )
@@ -327,8 +270,9 @@ bounce = 0.0
 
 shape = SubResource( 2 )
 
-[node name="RightWall" type="Sprite" parent="." index="6"]
+[node name="RightWall" type="Sprite" parent="." index="7"]
 
+editor/display_folded = true
 position = Vector2( 448.433, 490.459 )
 scale = Vector2( 0.159115, 4.72799 )
 texture = ExtResource( 11 )
