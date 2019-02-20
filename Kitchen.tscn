@@ -27,7 +27,7 @@ extents = Vector2( 41.408, 16.4625 )
 custom_solver_bias = 0.0
 extents = Vector2( 27.2654, 16.0758 )
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" index="0"]
 
 position = Vector2( 3, 30 )
 
